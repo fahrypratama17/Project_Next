@@ -1,5 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
+import { servicesSecItems } from "@/data/data";
+import ServicesCard from "@/components/ServicesCard";
 
 export default function Home() {
   return (
@@ -63,9 +65,32 @@ export default function Home() {
       {/* Service */}
       <section className="section">
         <div className="container">
+          <div className="flex flex-wrap items-center justify-between gap-6">
+            <div>
+              <p className="subtitle">Services</p>
+              <h2 className="title max-w-md">
+                Advanced Dental Care for Healthier Smiles
+              </h2>
+            </div>
+            <Link href={"/services"} className="primary-btn uppercase">
+              View all
+            </Link>
+          </div>
+          <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {servicesSecItems.map((item) => (
+              <ServicesCard key={item.id} {...item} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* About */}
+      <section className="section">
+        <div className="container">
           <div>
             <p className="subtitle"></p>
           </div>
+          <div></div>
         </div>
       </section>
     </>
