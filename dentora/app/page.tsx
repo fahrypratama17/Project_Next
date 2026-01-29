@@ -3,6 +3,7 @@ import Image from "next/image";
 import { servicesSecItems } from "@/data/data";
 import ServicesCard from "@/components/ServicesCard";
 import Testimonials from "@/components/Testimonials";
+import Cta from "@/components/Cta";
 
 export default function Home() {
   return (
@@ -133,6 +134,11 @@ export default function Home() {
       {/* Testimonials */}
       <section className="section">
         <Testimonials />
+      </section>
+
+      {/* CTA */}
+      <section className="section">
+        <Cta />
       </section>
     </>
   );
