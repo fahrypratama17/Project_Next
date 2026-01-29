@@ -85,14 +85,51 @@ export default function Home() {
       </section>
 
       {/* About */}
-      <section className="section">
-        <div className="container">
-          <div>
-            <p className="subtitle"></p>
+      <section className="bg-primary-100/25 relative mt-20 py-20">
+        <div className="container grid gap-14 lg:grid-cols-2 lg:items-center">
+          <div className="space-y-1.5 lg:order-1">
+            <p className="subtitle">About Us</p>
+            <h2 className="title">
+              Serving Our Community with 15 Years of Experience
+            </h2>
+            <p className="mt-4 mb-8">
+              Lorem ipsum dolor sit amet consectetur. Amet platea egestas
+              aliquam habitant. Hac urna a rhoncus venenatis arcu. Felis elit
+              posuere ornare massa pellentesque quam porta. Amet dolor nisi
+              vehicula consectetur sed aliquet ut faucibus gravida. Ultricies a
+              sem magna feugiat nisl mi a.
+            </p>
+
+            <div className="mb-10 flex items-center gap-6">
+              <span className="ring-primary-500 aspect-square overflow-hidden rounded-full ring">
+                <Image
+                  src={"/images/about-sm-img.png"}
+                  alt={"sm image"}
+                  width={80}
+                  height={80}
+                />
+              </span>
+              <div className="space-y-0.5">
+                <h2 className="card-title">Dr. Smith Moore</h2>
+                <p>Dentist at global Dentistry</p>
+              </div>
+            </div>
+            <Link href={"/about"} className="primary-btn uppercase">
+              LEARN MORE
+            </Link>
           </div>
-          <div></div>
+          <div className="mx-auto max-w-max">
+            <Image
+              src={"/images/about-section-img.png"}
+              width={512}
+              height={557}
+              alt={"about section image"}
+            />
+          </div>
         </div>
       </section>
+
+      {/* Testimonials */}
     </>
   );
 }
