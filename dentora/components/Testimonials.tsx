@@ -9,11 +9,11 @@ const Testimonials = () => {
       <div className="max-w-2xl space-y-2">
         <p className="subtitle">Testimonials</p>
         <h2 className="title">Hear from Our 1,000+ Happy Patients</h2>
-        <p>
+        <p className="mt-3">
           Lorem ipsum dolor sit amet consectetur. Amet platea egestas aliquam
           habitant. Hac
         </p>
-        <div className="mt-3">
+        <div className="mt-11">
           {testimonialsItems.map((item) => (
             <div
               key={item.id}
@@ -25,20 +25,21 @@ const Testimonials = () => {
                   alt={item.author}
                   width={95}
                   height={95}
+                  className="ring-primary-600 size-16 rounded-full ring-4"
                 />
               </div>
-              <div>
+              <div className="space-y-4">
                 <p>{item.text}</p>
                 <p className="card-title">{item.author}</p>
               </div>
             </div>
           ))}
         </div>
-        <div className="">
-          <button>
+        <div className="mt-11 flex items-center justify-center gap-2.5 lg:mt-16">
+          <button className="bg-primary-600 hover:bg-primary-700 border-primary-800 focus:bg-primary-700 flex size-10 items-center justify-center rounded-full border text-white transition-colors">
             <RiArrowLeftLine />
           </button>
-          <button>
+          <button className="bg-primary-600 hover:bg-primary-700 border-primary-800 focus:bg-primary-700 flex size-10 items-center justify-center rounded-full border text-white transition-colors">
             <RiArrowRightLine />
           </button>
         </div>
