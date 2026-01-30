@@ -317,7 +317,7 @@ export const contactListItems = [
   },
 ];
 
-export const formDromdownItems = [
+export const formDropdownItems = [
   "Cosmetic Dentistry",
   "Teeth Whitening",
   "Dental Implants",

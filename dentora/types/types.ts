@@ -10,3 +10,9 @@ export interface blogCardProps {
   text: string;
   date: string;
 }
+
+export interface inputFieldProps {
+  label: string;
+  placeholder: string;
+  type: string;
+}
