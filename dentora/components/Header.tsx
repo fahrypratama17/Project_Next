@@ -36,6 +36,7 @@ const Header = () => {
                 <Link
                   href={item.href}
                   className={`hover:text-primary-600 inline-block p-1.5 font-medium uppercase transition-colors ${pathName === item.href ? "text-primary-600" : ""}`}
+                  onClick={handleClick}
                 >
                   {item.label}
                 </Link>
