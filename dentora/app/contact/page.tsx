@@ -1,5 +1,6 @@
-import { contactListItems, formDropdownItems } from "@/data/data";
+import { contactListItems, faqItems, formDropdownItems } from "@/data/data";
 import InputField from "@/components/InputField";
+import FaqCard from "@/components/FaqCard";
 
 const page = () => {
   return (
@@ -84,7 +85,22 @@ const page = () => {
       </section>
 
       <section className="section">
-        <div className="container"></div>
+        <div className="container">
+          <div>
+            <p className="subtitle">FAQS</p>
+            <h2 className="title">Frequently Asked Questions</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Distinctio quidem quasi asperiores eveniet accusantium.
+            </p>
+          </div>
+
+          <div>
+            {faqItems.map((item) => (
+              <FaqCard key={item.id} />
+            ))}
+          </div>
+        </div>
       </section>
     </>
   );
