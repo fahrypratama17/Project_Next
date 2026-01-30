@@ -86,7 +86,7 @@ const page = () => {
 
       <section className="section">
         <div className="container">
-          <div>
+          <div className="mx-auto mb-8 max-w-xl space-y-1.5 text-center">
             <p className="subtitle">FAQS</p>
             <h2 className="title">Frequently Asked Questions</h2>
             <p>
@@ -95,9 +95,9 @@ const page = () => {
             </p>
           </div>
 
-          <div>
+          <div className="border-primary-200 divide-primary-200 mx-auto max-w-3xl divide-y rounded-lg border bg-white p-9">
             {faqItems.map((item) => (
-              <FaqCard key={item.id} />
+              <FaqCard key={item.id} {...item} />
             ))}
           </div>
         </div>

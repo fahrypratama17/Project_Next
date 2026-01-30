@@ -16,3 +16,8 @@ export interface inputFieldProps {
   placeholder: string;
   type: string;
 }
+
+export interface faqProps {
+  title: string;
+  text: string;
+}
