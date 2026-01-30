@@ -142,7 +142,7 @@ export const valuesItems = [
   {
     id: 2,
     icon: RiUserStarLine,
-    title: "Responsability",
+    title: "Responsibility",
     text: "Lorem ipsum dolor sit amet consectetur. Eget ligula pharetra vulputate ac dictumst. Lacus vitae diam.",
   },
   {
