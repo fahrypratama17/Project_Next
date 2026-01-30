@@ -9,7 +9,7 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="bg-primary-100/30 pt-16">
+    <footer className="bg-primary-100/30 mt-26 pt-16 pb-7">
       <div className="container divide-y divide-gray-300">
         <div className="grid gap-12 pb-16 sm:grid-cols-2 lg:grid-cols-[1fr_0.7fr_0.7fr_0.7fr] lg:pb-20">
           <div>
@@ -43,26 +43,30 @@ const Footer = () => {
           ))}
         </div>
 
-        <div>
-          <Image
-            src={"/images/logo.png"}
-            alt={"footer logo"}
-            width={167}
-            height={43}
-          />
+        <div className="flex flex-wrap items-center justify-between gap-2 pt-3">
+          <div className="flex items-center gap-5">
+            <div>
+              <Image
+                src={"/images/logo.png"}
+                alt={"footer logo"}
+                width={167}
+                height={43}
+              />
+            </div>
+            <div className="flex items-center gap-2">
+              <a href="#" className="hover:text-primary-600 transition-colors">
+                <RiFacebookBoxFill />
+              </a>
+              <a href="#" className="hover:text-primary-600 transition-colors">
+                <RiInstagramFill />
+              </a>
+              <a href="#" className="hover:text-primary-600 transition-colors">
+                <RiTwitterXFill />
+              </a>
+            </div>
+          </div>
+          <p>&copy; {new Date().getFullYear()} Dentora.All rights Reserved</p>
         </div>
-        <div>
-          <a href="#" className="">
-            <RiFacebookBoxFill />
-          </a>
-          <a href="#" className="">
-            <RiInstagramFill />
-          </a>
-          <a href="#" className="">
-            <RiTwitterXFill />
-          </a>
-        </div>
-        <p>&copy; {new Date().getFullYear()} Dentora.All rights Reserved</p>
       </div>
     </footer>
   );
